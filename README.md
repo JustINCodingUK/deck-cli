@@ -1,55 +1,55 @@
 ---
 
-🃏 Deck CLI
+# Deck CLI
 
 Deck CLI is a lightweight, blazing-fast command-line tool for running Deck automation scripts - whether globally or per project. Powered by GraalVM native image and built with Kotlin, it’s optimized for simplicity, speed, and cross-platform consistency.
 
 
 ---
 
-✨ Features
+## ✨ Features
 
-- Fast: Native image means instant startup, even for complex tasks
+* Fast: Native image means instant startup, even for complex tasks
 
-- Flexible: Run global scripts or project-specific automation
+* Flexible: Run global scripts or project-specific automation
 
-- Composable: Backed by deck-api, making it modular and extensible
+* Composable: Backed by deck-api, making it modular and extensible
 
-- Asynchronous: Built with kotlinx.coroutines for smooth parallel execution
+* Asynchronous: Built with kotlinx.coroutines for smooth parallel execution
 
 
 
 ---
 
-🛠️ Usage
+## 🛠️ Usage
 
-# Run a script defined in a project-local .deckfile file inside project/.deck/scripts/
-deck project <script-name>
+* Run a script defined in a project-local .deckfile file inside project/.deck/scripts/
+`deck project <script-name>`
 
-# Run an independent .deckfile
-deck <script-name>
+* Run an independent .deckfile
+`deck <script-name>`
 
 Example:
 
-deck project ci         # Run the 'ci' task from .deck in current directory
-deck setup              # Run setup.deckfile script
+`deck project ci         # Run the 'ci' task from .deck in current directory`
+`deck setup              # Run setup.deckfile script`
 
 
 ---
 
-📦 Tech Stack
+## 📦 Tech Stack
 
-Deck API – modular DSL for defining tasks
+* Deck API – modular DSL for defining tasks
 
-Kotlinx Coroutines – async power under the hood
+* Kotlinx Coroutines – async power under the hood
 
-GraalVM Native Image – instant startup, tiny binary
+* GraalVM Native Image – instant startup, tiny binary
 
 
 
 ---
 
-💬 Usage
+## 💬 Usage
 
 To simplify developer tool management, and CI pipelines. CLI primarily is targeted towards CI pipelines.
 
