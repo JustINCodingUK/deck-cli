@@ -40,11 +40,11 @@ Example:
 
 ## 📦 Tech Stack
 
-* Deck API – modular DSL for defining tasks
+* [Deck API](https://central.sonatype.com/artifact/io.github.justincodinguk.devdeck/deck-api) - core library for defining tasks
 
-* Kotlinx Coroutines – async power under the hood
+* Kotlinx Coroutines - async power under the hood
 
-* GraalVM Native Image – instant startup, tiny binary
+* GraalVM Native Image - instant startup, tiny binary
 
 
 
