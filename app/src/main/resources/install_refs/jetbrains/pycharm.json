@@ -1,0 +1,28 @@
+{
+  "id": "jetbrains.pycharm",
+  "name": "PyCharm",
+  "windows": {
+    "os": "Windows",
+    "packageId": "JetBrains.PyCharm",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/python/pycharm-{version}.zip",
+      "aarch64": "https://download.jetbrains.com/python/pycharm-{version}-aarch64.zip"
+    }
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "pycharm",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/python/pycharm-{version}.dmg",
+      "aarch64": "https://download.jetbrains.com/python/pycharm-{version}-aarch64.dmg"
+    }
+  },
+  "linux": {
+    "os": "Linux",
+    "packageId": "com.jetbrains.PyCharm-Professional",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/python/pycharm-{version}.tar.gz",
+      "aarch64": "https://download.jetbrains.com/python/pycharm-{version}-aarch64.tar.gz"
+    }
+  }
+}

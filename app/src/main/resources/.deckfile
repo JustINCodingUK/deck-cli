@@ -1,0 +1,14 @@
+deck.name="TestDeck"
+deck.author="Justin"
+
+deck.start
+
+REFERENCE https://github.com/jetbrains/deck-refs.json
+
+INSTALL google.android-studio
+INSTALL jetbrains.idea-community
+
+STEP BEGIN setup-credence
+CLONE JustINCodingUK/Credence
+RUN ./gradlew IN Credence
+STEP END

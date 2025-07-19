@@ -1,0 +1,28 @@
+{
+  "id": "google.flutter",
+  "name": "Flutter SDK",
+  "windows": {
+    "os": "Windows",
+    "binaryUrls": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_{version}-stable.zip",
+      "aarch64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_{version}-stable.zip"
+    },
+    "binDirectory": "/bin"
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "flutter",
+    "binaryUrls": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_{version}-stable.zip",
+      "aarch64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_{version}-stable.zip"
+    },
+    "binDirectory": "/bin"
+  },
+  "linux": {
+    "os": "Linux",
+    "binaryUrls": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${version}-stable.tar.xz"
+    },
+    "binDirectory": "/flutter/bin"
+  }
+}

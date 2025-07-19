@@ -1,0 +1,28 @@
+{
+  "id": "jetbrains.webstorm",
+  "name": "WebStorm",
+  "windows": {
+    "os": "Windows",
+    "packageId": "JetBrains.WebStorm",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/webstorm/WebStorm-{version}.zip",
+      "aarch64": "https://download.jetbrains.com/webstorm/WebStorm-{version}-aarch64.zip"
+    }
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "webstorm",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/webstorm/WebStorm-{version}.dmg",
+      "aarch64": "https://download.jetbrains.com/webstorm/WebStorm-{version}-aarch64.dmg"
+    }
+  },
+  "linux": {
+    "os": "Linux",
+    "packageId": "com.jetbrains.WebStorm",
+    "binaryUrl": {
+      "x64": "https://download.jetbrains.com/webstorm/WebStorm-{version}.tar.gz",
+      "aarch64": "https://download.jetbrains.com/webstorm/WebStorm-{version}-aarch64.tar.gz"
+    }
+  }
+}

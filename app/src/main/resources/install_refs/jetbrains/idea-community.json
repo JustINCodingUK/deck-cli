@@ -1,0 +1,40 @@
+{
+  "id": "jetbrains.idea-community",
+  "name": "IntelliJ IDEA Community Edition",
+  "isDesktopApp": true,
+  "windows": {
+    "os": "Windows",
+    "packageIds": {
+      "winget":"JetBrains.IntelliJIDEA.Community"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIC-{version}.zip",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIC-{version}-aarch64.zip"
+    },
+    "executablePath": "/bin/idea.exe"
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageIds": {
+      "brew":"intellij-idea-ce"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIC-{version}.dmg",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIC-{version}-aarch64.dmg"
+    },
+    "executablePath": "/bin/idea"
+  },
+  "linux": {
+    "os": "Linux",
+    "packageIds": {
+      "pacman": "intellij-idea-community-edition",
+      "flatpak":"com.jetbrains.IntelliJ-IDEA-Community",
+      "snap": "intellij-idea-community"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIC-{version}.tar.gz",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIC-{version}-aarch64.tar.gz"
+    },
+    "executablePath": "/bin/idea"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "git.git",
+  "name": "Git",
+  "windows": {
+    "os": "Windows",
+    "binaryUrl": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_{version}-stable.zip",
+      "aarch64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_{version}-stable.zip"
+    }
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "brew install --cask flutter",
+    "binaryUrl": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_{version}-stable.zip",
+      "aarch64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_{version}-stable.zip"
+    }
+  },
+  "linux": {
+    "os": "Linux",
+    "binaryUrl": {
+      "x64": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_{version}-stable.tar.xz"
+    }
+  }
+}

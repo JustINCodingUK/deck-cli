@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Define log pattern -->
+    <property name="LOG_PATTERN" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+
+    <!-- Console appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Optional: File appender (uncomment if needed) -->
+    <!--
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+      <file>logs/app.log</file>
+      <append>true</append>
+      <encoder>
+        <pattern>${LOG_PATTERN}</pattern>
+      </encoder>
+    </appender>
+    -->
+
+    <!-- Set root log level and appenders -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <!-- <appender-ref ref="FILE"/> -->
+    </root>
+
+    <!-- Optional: Set specific logger levels -->
+    <!--
+    <logger name="com.example.yourpackage" level="DEBUG"/>
+    -->
+
+</configuration>

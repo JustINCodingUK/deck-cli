@@ -1,0 +1,29 @@
+{
+  "id": "google.android-studio",
+  "name": "Android Studio",
+  "windows": {
+    "os": "Windows",
+    "packageId": "Google.AndroidStudio",
+    "binaryUrls": {
+      "x64": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/{version}/android-studio-{version}-windows.zip"
+    },
+    "binDirectory": "/bin"
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "android-studio",
+    "binaryUrls": {
+      "x64": "https://redirector.gvt1.com/edgedl/android/studio/install/{version}/android-studio-{version}-mac.dmg",
+      "aarch64": "https://redirector.gvt1.com/edgedl/android/studio/install/{version}/android-studio-{version}-mac_arm.dmg"
+    },
+    "binDirectory": "/bin"
+  },
+  "linux": {
+    "os": "Linux",
+    "packageId": "com.google.AndroidStudio",
+    "binaryUrls": {
+      "x64": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/{version}/android-studio-{version}-linux.tar.gz"
+    },
+    "binDirectory": "/bin"
+  }
+}

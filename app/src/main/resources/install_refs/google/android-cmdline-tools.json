@@ -1,0 +1,21 @@
+{
+  "id": "google.android-cmdline-tools",
+  "name": "Android Command Line Tools",
+  "windows": {
+    "os": "Windows",
+    "packageId": "winget install --id=Git.Git -e",
+    "binaryUrl": {
+      "x64": "https://github.com/git-for-windows/git/releases/download/v{version}.windows.{subversion}/Git-{version}.{subversion}-64-bit.exe",
+      "aarch64": "https://github.com/git-for-windows/git/releases/download/v{version}.windows.{subversion}/Git-{version}.{subversion}-arm64.exe"
+    }
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "brew install --cask git",
+    "binaryUrl": {}
+  },
+  "linux": {
+    "os": "Linux",
+    "binaryUrl": {}
+  }
+}

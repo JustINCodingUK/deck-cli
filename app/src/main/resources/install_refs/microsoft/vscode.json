@@ -1,0 +1,28 @@
+{
+  "id": "microsoft.vscode",
+  "name": "Visual Studio Code",
+  "windows": {
+    "os": "Windows",
+    "packageId": "Microsoft.VisualStudioCode",
+    "binaryUrl": {
+      "x64": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64",
+      "aarch64": "https://code.visualstudio.com/sha/download?build=stable&os=win32-aarch64"
+    }
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageId": "visual-studio-code",
+    "binaryUrl": {
+      "x64": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal",
+      "aarch64": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal"
+    }
+  },
+  "linux": {
+    "os": "Linux",
+    "packageId": "com.visualstudio.code",
+    "binaryUrl": {
+      "x64": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64",
+      "aarch64": "https://code.visualstudio.com/sha/download?build=stable&os=linux-aarch64"
+    }
+  }
+}

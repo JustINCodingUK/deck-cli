@@ -1,0 +1,41 @@
+{
+  "id": "jetbrains.idea-ultimate",
+  "name": "IntelliJ IDEA Ultimate",
+  "isDesktopApp": true,
+  "windows": {
+    "os": "Windows",
+    "packageIds": {
+      "winget":"JetBrains.IntelliJIDEA.Ultimate"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIU-${version}.zip",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIU-${version}-aarch64.zip"
+    },
+    "executablePath": "/*/bin/idea.exe",
+    "iconPath": "/*/bin/idea.png"
+  },
+  "macOs": {
+    "os": "MacOS",
+    "packageIds": {
+      "brew":"intellij-idea"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIU-${version}.dmg",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIU-${version}-aarch64.dmg"
+    },
+    "executablePath": "/*/bin/idea",
+    "iconPath": "/*/bin/idea.png"
+  },
+  "linux": {
+    "os": "Linux",
+    "packageIds": {
+      "snap": "intellij-idea-ultimate"
+    },
+    "binaryUrls": {
+      "x64": "https://download.jetbrains.com/idea/ideaIU-${version}.tar.gz",
+      "aarch64": "https://download.jetbrains.com/idea/ideaIU-${version}-aarch64.tar.gz"
+    },
+    "executablePath": "/*/bin/idea",
+    "iconPath": "/*/bin/idea.png"
+  }
+}
