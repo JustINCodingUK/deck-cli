@@ -60,6 +60,7 @@ application {
 graalvmNative {
     binaries {
         named("main") {
+            buildArgs.add("--initialize-at-build-time")
             resources {
                 includedPatterns.add("install_refs/.*")
                 includedPatterns.add("res_manifest.txt")
