@@ -24,9 +24,11 @@ Deck CLI is a lightweight, blazing-fast command-line tool for running Deck autom
 ## 🛠️ Usage
 
 * Run a script defined in a project-local .deckfile file inside project/.deck/scripts/
+  
 `deck project <script-name>`
 
 * Run an independent .deckfile
+  
 `deck <script-name>`
 
 Example:
