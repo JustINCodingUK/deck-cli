@@ -17,8 +17,7 @@ class DeckProject private constructor(
                 val compiler = deckFileCompiler {
                     fileName = file.name.removeSuffix(".deckfile")
                     filePath = file.absolutePath
-                    // TODO: Extract the references to .devdeck from the app
-
+                    referencesDirectory = System.getProperty("user.home")+"/.devdeck/install_refs/"
                     taskBatchSize = 5
                 }
                 scripts.add(compiler.loadDeckFile())

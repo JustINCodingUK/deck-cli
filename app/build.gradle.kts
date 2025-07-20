@@ -61,6 +61,10 @@ graalvmNative {
     binaries {
         named("main") {
             buildArgs.add("--strict-image-heap")
+            resources {
+                includedPatterns.add("install_refs/.*")
+                includedPatterns.add("res_manifest.txt")
+            }
         }
     }
 }
@@ -77,4 +81,22 @@ tasks.register<Jar>("fatJar") {
     from({
         configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
     })
+}
+
+val generateManifest by tasks.registering {
+    doLast {
+        val resourcesDir = file("src/main/resources/install_refs/")
+        val manifestFile = file("src/main/resources/res_manifest.txt")
+        manifestFile.bufferedWriter().use { out ->
+            resourcesDir.walkTopDown().filter { it.isFile }.forEach {
+                val relPath = it.relativeTo(file("src/main/resources")).path.replace("\\", "/")
+                out.write(relPath)
+                out.newLine()
+            }
+        }
+    }
+}
+
+tasks.named("processResources") {
+    dependsOn(generateManifest)
 }

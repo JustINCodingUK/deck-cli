@@ -7,7 +7,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.slf4j.LoggerFactory
-import kotlin.math.log
 
 class DeferredScriptExecutor(
     private val deckFile: DeckFile
