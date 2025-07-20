@@ -3,7 +3,8 @@ name: GraalVM Native Build
 on:
   push:
     tags:
-      - 'v*' 
+      - 'v*'
+  workflow_dispatch:
 
 jobs:
   build-native:
