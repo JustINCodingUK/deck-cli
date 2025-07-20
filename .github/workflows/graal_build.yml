@@ -30,7 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Native Image
-        run: ./gradlew nativeCompile
+        run: ./gradlew nativeCompile --no-configuration-cache
 
       - name: Find Executable
         id: find_exe
