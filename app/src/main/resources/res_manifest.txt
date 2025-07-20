@@ -1,0 +1,9 @@
+install_refs/git/git.json
+install_refs/microsoft/vscode.json
+install_refs/google/android-studio.json
+install_refs/google/android-cmdline-tools.json
+install_refs/google/flutter.json
+install_refs/jetbrains/pycharm.json
+install_refs/jetbrains/idea-ultimate.json
+install_refs/jetbrains/webstorm.json
+install_refs/jetbrains/idea-community.json

@@ -36,9 +36,9 @@ jobs:
         id: find_exe
         run: |
           if [[ "${{ runner.os }}" == "Windows" ]]; then
-            echo "path=${{ github.workspace }}\\build\\native\\nativeCompile\\app.exe" >> $GITHUB_OUTPUT
+            echo "path=${{ github.workspace }}\\app\\build\\native\\nativeCompile\\app.exe" >> $GITHUB_OUTPUT
           else
-            echo "path=${{ github.workspace }}/build/native/nativeCompile/app" >> $GITHUB_OUTPUT
+            echo "path=${{ github.workspace }}/app/build/native/nativeCompile/app" >> $GITHUB_OUTPUT
           fi
         shell: bash
 
