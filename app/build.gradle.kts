@@ -60,7 +60,6 @@ application {
 graalvmNative {
     binaries {
         named("main") {
-            buildArgs.add("--strict-image-heap")
             resources {
                 includedPatterns.add("install_refs/.*")
                 includedPatterns.add("res_manifest.txt")
