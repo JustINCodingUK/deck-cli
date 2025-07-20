@@ -1,6 +1,6 @@
 ---
 
-# Deck CLI
+# Deck CLI v1.0.0
 
 Deck CLI is a lightweight, blazing-fast command-line tool for running Deck automation scripts - whether globally or per project. Powered by GraalVM native image and built with Kotlin, it’s optimized for simplicity, speed, and cross-platform consistency.
 
