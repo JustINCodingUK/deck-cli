@@ -56,6 +56,12 @@ application {
     mainClass = "dev.justincodinguk.deckcli.AppKt"
 }
 
+val fileNameSuffix = when {
+    System.getProperty("os.name").startsWith("Windows", ignoreCase = true) -> "windows.exe"
+    System.getProperty("os.name").startsWith("Mac", ignoreCase = true) -> "macos"
+    System.getProperty("os.name").startsWith("Linux", ignoreCase = true) -> "linux"
+    else -> "unknown"
+}
 
 graalvmNative {
     binaries {
@@ -65,6 +71,21 @@ graalvmNative {
                 includedPatterns.add("install_refs/.*")
                 includedPatterns.add("res_manifest.txt")
             }
+        }
+    }
+}
+
+tasks.named("nativeCompile") {
+    doLast {
+        val outputDir = file("build/native/nativeCompile")
+        val original = outputDir.resolve(if (fileNameSuffix == "windows.exe") "app.exe" else "app")
+        val renamed = outputDir.resolve("deck-$fileNameSuffix")
+
+        if (original.exists()) {
+            original.renameTo(renamed)
+            println("Renamed binary to: ${renamed.name}")
+        } else {
+            println("Original binary not found at: ${original.path}")
         }
     }
 }
