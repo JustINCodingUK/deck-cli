@@ -18,14 +18,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - name: Set up GraalVM
+        uses: graalvm/setup-graalvm@v1
         with:
-          distribution: 'graalvm'
           java-version: '17'
-
-      - name: Set up GraalVM Native Image
-        run: gu install native-image
+          distribution: 'graalvm-community'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Grant execute permission for Gradle
         if: runner.os != 'Windows'
